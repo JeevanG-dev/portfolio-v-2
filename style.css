@@ -105,9 +105,9 @@ a img {
   width: 1100px;
   height: 600px;
   align-items: center;
-  position: relative;
+  position: absolute;
   left: 160px;
-  bottom: 200px;
+  bottom: 180px;
   justify-content: space-evenly;
   align-items: center;
   padding-top: 90px;
