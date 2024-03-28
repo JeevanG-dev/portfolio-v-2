@@ -42,7 +42,7 @@
   height: 4rem;
   width: 100vw;
   position: sticky;
-  top: 47rem;
+  top: 100vh;
   background: rgba(36, 36, 217, 0.481);
   backdrop-filter: blur(10px);
 }
