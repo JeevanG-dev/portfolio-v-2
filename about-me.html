@@ -43,9 +43,13 @@
         >
       </div>
 
-      <div class="about_me">
+      <div id="cursor" class="about_me">
         <div style="opacity: 90%" class="left-port">
-          <img style="width: 70%; margin-left: 5rem;" src="./assets/IMG_0141-removebg-preview.png" alt="" />
+          <img
+            style="width: 70%; margin-left: 5rem"
+            src="./assets/IMG_0141-removebg-preview.png"
+            alt=""
+          />
         </div>
         <div style="opacity: 95%" class="right-port">
           <h2 style="margin-bottom: 5px">Wellcome to my Portfolio</h2>
@@ -70,8 +74,33 @@
             ></a>
           </button>
         </div>
+        <a class="end-child" href="./index.html">x</a>
+        <script>
+          const cursor = document.getElementById("cursor");
+          let isMoving = false;
 
-        <a class="about_exit" href="./index.html"><label for=""></label>X</a>
+          cursor.addEventListener("mousedown", startMoving);
+          document.addEventListener("mouseup", stopMoving);
+
+          function startMoving(event) {
+            isMoving = true;
+            document.addEventListener("mousemove", moveDiv);
+          }
+
+          function stopMoving() {
+            isMoving = false;
+            document.removeEventListener("mousemove", moveDiv);
+          }
+
+          function moveDiv(event) {
+            if (isMoving) {
+              const x = event.clientX;
+              const y = event.clientY;
+              cursor.style.left = `${x}px`;
+              cursor.style.top = `${y}px`;
+            }
+          }
+        </script>
       </div>
 
       <div class="taskbar">
