@@ -123,8 +123,8 @@ a img {
   text-decoration: none;
   border-radius: 20px 20px;
   text-align: center;
-  width: 50px;
-  height: 50px;
+  width: 70px;
+  height: 70px;
 }
 
 @keyframes square-in-center {
