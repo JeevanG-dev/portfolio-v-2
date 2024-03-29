@@ -118,13 +118,13 @@ a img {
 .end-child {
   position: absolute;
   padding: 5px;
-  left: 55.2rem;
+  left: 50rem;
   bottom: 29.5rem;
   text-decoration: none;
   border-radius: 20px 20px;
   text-align: center;
-  width: 70px;
-  height: 70px;
+  width: 150px;
+  height: 150px;
 }
 
 @keyframes square-in-center {
