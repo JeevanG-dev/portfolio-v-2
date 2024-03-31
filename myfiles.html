@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -12,103 +13,92 @@
     />
 
     <link rel="stylesheet" href="./style.css" />
-
-    <title>About me</title>
+    <title>My Files</title>
   </head>
-
   <body>
     <div id="wrapper">
       <audio id="clickSound">
         <source src="./assets/click.wav" type="audio/mpeg" />
       </audio>
-      <div class="desktop">
-        <a href=""
-          ><img src="./assets/recyle-bin-removebg-preview.png" alt=""
-        /></a>
-        <a style="color: white; text-decoration: none" href=""
-          ><img
-            style="margin-bottom: 0px"
-            src="./assets/Icon-removebg-preview.png"
-            alt=""
-          />
-          <br />
-          <p>About me</p></a
-        >
 
-        <a style="color: white; text-decoration: none" href=""
-          ><img
-            style="margin-bottom: 0px"
-            src="./assets/pc-removebg-preview.png"
-            alt=""
-          />
-          <br />
-          <p>My PC</p></a
-        >
-      </div>
-
-      <div id="cursor" class="about_me">
-        <div style="opacity: 90%" class="left-port">
-          <img
-            style="width: 70%; margin-left: 5rem"
-            src="./assets/IMG_0141-removebg-preview.png"
-            alt=""
-          />
+      <div class="myFiles">
+        <div class="myFiles-exit">
+          <a class="iconClick" style="width: 100px" href="./index.html"
+            >xxxxxxxxxxxxxx</a
+          >
         </div>
-        <div style="opacity: 95%" class="right-port">
-          <h2 style="margin-bottom: 5px">Wellcome to my Portfolio</h2>
-          <hr style="margin-bottom: 5px" />
-          <h3>This is Jeevan Gaudel. Transforming Ideas</h3>
+        <div class="myFiles-folders">
+          <div style="width: 80px">
+            <a
+              class="iconClick"
+              style="margin: 0 20%; text-decoration: none; color: black"
+              href=""
+            >
+              <img src="./assets/Pr9Me-removebg-preview.png" alt="" />
+              <p style="text-align: center">My Work Histroy</p>
+            </a>
+          </div>
 
-          <h3 style="margin-bottom: 5px">Into Functional Websites.</h3>
+          <div style="width: 80px">
+            <a
+              class="iconClick"
+              style="margin: 0 20%; text-decoration: none; color: black"
+              href=""
+            >
+              <img src="./assets/Pr9Me-removebg-preview.png" alt="" />
+              <p style="text-align: center">My educational Folder</p>
+            </a>
+          </div>
 
-          <p style="margin-bottom: 5px">
-            Full Stack Developer || HTML || CSS || Javascript ||<br />
-            Node.js || React || Figma || MySql || Database ||<br />
-            Video Editor
-          </p>
-          <button style="border-radius: 5px">
-            <a style="text-decoration: none" href="">
-              Resume <i class="fa-solid fa-download"></i
-            ></a>
-          </button>
-          <button style="border-radius: 5px">
-            <a style="text-decoration: none" href=""
-              >Contact <i class="fa-regular fa-address-book"></i
-            ></a>
-          </button>
+          <div style="width: 80px">
+            <a
+              class="iconClick"
+              style="margin: 0 20%; text-decoration: none; color: black"
+              href=""
+            >
+              <img src="./assets/Pr9Me-removebg-preview.png" alt="" />
+              <p style="text-align: center">My Personal Folder</p>
+            </a>
+          </div>
+
+          <div style="width: 80px">
+            <a
+              class="iconClick"
+              style="margin: 0 20%; text-decoration: none; color: black"
+              href=""
+            >
+              <img src="./assets/Pr9Me-removebg-preview.png" alt="" />
+              <p style="text-align: center">My Social Media Folder</p>
+            </a>
+          </div>
+
+          <div style="width: 80px">
+            <a
+              class="iconClick"
+              style="margin: 0 20%; text-decoration: none; color: black"
+              href=""
+            >
+              <img src="./assets/Pr9Me-removebg-preview.png" alt="" />
+              <p style="text-align: center">My Work Histroy</p>
+            </a>
+          </div>
+
+          <div style="width: 80px">
+            <a
+              class="iconClick"
+              style="margin: 0 20%; text-decoration: none; color: black"
+              href=""
+            >
+              <img src="./assets/Pr9Me-removebg-preview.png" alt="" />
+              <p style="text-align: center">My Work Histroy</p>
+            </a>
+          </div>
         </div>
-        <a class="end-child iconClick" href="./index.html">xddddd</a>
-        <script>
-          const cursor = document.getElementById("cursor");
-          let isMoving = false;
-
-          cursor.addEventListener("mousedown", startMoving);
-          document.addEventListener("mouseup", stopMoving);
-
-          function startMoving(event) {
-            isMoving = true;
-            document.addEventListener("mousemove", moveDiv);
-          }
-
-          function stopMoving() {
-            isMoving = false;
-            document.removeEventListener("mousemove", moveDiv);
-          }
-
-          function moveDiv(event) {
-            if (isMoving) {
-              const x = event.clientX;
-              const y = event.clientY;
-              cursor.style.left = x + "px";
-              cursor.style.top = y + "px";
-            }
-          }
-        </script>
       </div>
 
       <div class="taskbar">
         <div class="left">
-          <a href="">
+          <a class="iconClick" href="">
             <div
               style="color: white; font-size: 2.5em; margin-left: 10px"
               class="logo"
@@ -117,31 +107,39 @@
             </div>
           </a>
           <div class="search">
-            <input type="text" name="" id="" placeholder="Search anything" />
+            <input type="text" name="" id="" placeholder="Jeevan Gaudel" />
           </div>
           <hr
             style="transform: rotate(90deg); width: 30px; margin-right: 0px"
           />
           <div class="files">
-            <a href=""
+            <a class="iconClick" href="./myfiles.html"
               ><i
                 style="color: white; font-size: 2em; margin: 0px"
                 class="fa-solid fa-folder"
               ></i
             ></a>
-            <a href="">
+            <a class="iconClick" href="https://www.google.com/" target="_blank">
               <i
                 style="color: white; font-size: 2em"
                 class="fa-brands fa-internet-explorer"
               ></i>
             </a>
-            <a href="">
+            <a
+              class="iconClick"
+              href="https://www.linkedin.com/in/jeevan-gaudel/"
+              target="_blank"
+            >
               <i
                 style="color: white; font-size: 2em"
                 class="fa-solid fa-globe"
               ></i
             ></a>
-            <a href="">
+            <a
+              class="iconClick"
+              href="https://www.whatsapp.com/"
+              target="_blank"
+            >
               <i
                 style="color: white; font-size: 2.2em"
                 class="fa-brands fa-skype"
@@ -152,7 +150,7 @@
 
         <div class="right">
           <div class="icons">
-            <a style="color: white; font-size: 1em" href=""
+            <a class="iconClick" style="color: white; font-size: 1em" href=""
               ><i class="fa-solid fa-chevron-up"></i
             ></a>
             <a style="color: white; font-size: 1em" href="">
