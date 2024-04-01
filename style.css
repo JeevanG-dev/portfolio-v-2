@@ -117,16 +117,16 @@ a img {
 }
 .end-child {
   padding: 5px;
-  left: 47.5rem;
+  /* left: 47.5rem;
 
-  position: absolute;
+  position: absolute; */
   text-decoration: none;
   border-radius: 20px 20px;
   text-align: center;
 
   width: 150px;
   height: 37rem;
-  border: 2px solid red;
+  
 }
 
 @keyframes square-in-center {
