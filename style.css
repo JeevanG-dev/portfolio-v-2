@@ -117,8 +117,9 @@ a img {
 }
 .end-child {
   padding: 5px;
-  /* left: 50rem; */
-  /* bottom: 27rem; */
+  left: 50rem;
+
+  position: absolute;
   text-decoration: none;
   border-radius: 20px 20px;
   text-align: center;
