@@ -116,17 +116,16 @@ a img {
   color: rgb(232, 127, 22);
 }
 .end-child {
-  position: absolute;
   padding: 5px;
-  left: 50rem;
-  bottom: 27rem;
+  /* left: 50rem; */
+  /* bottom: 27rem; */
   text-decoration: none;
   border-radius: 20px 20px;
   text-align: center;
+  margin-bottom: ;
   width: 150px;
-  height: 150px;
+  height: 37rem;
   border: 2px solid red;
- 
 }
 
 @keyframes square-in-center {
