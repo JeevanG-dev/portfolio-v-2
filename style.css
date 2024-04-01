@@ -126,7 +126,6 @@ a img {
 
   width: 150px;
   height: 37rem;
-  
 }
 
 @keyframes square-in-center {
@@ -160,5 +159,5 @@ a img {
 
   width: 80vw;
   height: 60vh;
-  margin: 21vh 0 0 11vw;
+  margin: 23vh 0 0 11vw;
 }
