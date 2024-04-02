@@ -164,16 +164,16 @@ a img {
 }
 
 .windows {
-  width: 30rem;
-  height: 35rem;
-  border: 2px solid red;
+  width: 40rem;
+  height: 36rem;
+
   position: absolute;
   z-index: 2;
   bottom: 3rem;
   right: 100vw;
+  background: url(./assets/logo_img.jpeg) no-repeat;
 }
 
 #check:checked + .windows {
-  right: calc(100vw - 33.5vw);
-  
+  right: calc(100vw - 44.3vw);
 }
