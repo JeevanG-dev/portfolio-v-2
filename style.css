@@ -114,6 +114,7 @@ a img {
   padding-top: 100px;
   animation: 0.5s cubic-bezier(0.25, 1, 0.3, 1) square-in-center both;
   color: rgb(232, 127, 22);
+  gap: 40px;
 }
 .end-child {
   padding: 5px;
@@ -123,10 +124,11 @@ a img {
   text-decoration: none;
   border-radius: 20px 20px;
   text-align: center;
-
-  width: 150px;
-  height: 12rem;
-  margin-bottom: 32rem;
+  border: 2px solid red;
+  height: 20rem;
+width: 180px;
+  margin-bottom:60%;
+  opacity: 0;
 }
 
 @keyframes square-in-center {
@@ -148,9 +150,9 @@ a img {
 
 .myFiles-exit {
   border: 2px solid red;
-  width: 100px;
+  width: 200px;
   margin-left: 92%;
-  opacity: 0%;
+  opacity: 0;
 }
 
 .myFiles-folders {
