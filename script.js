@@ -32,3 +32,19 @@ document.getElementById("windows-pop").addEventListener("click", function () {
   var clickSound = document.getElementById("clickSound");
   clickSound.play();
 });
+
+function updateTime() {
+  let currentTime = new Date().toLocaleTimeString();
+  document.getElementById("time").innerText = currentTime;
+}
+
+updateTime();
+
+let interValid = setInterval(updateTime, 1000);
+
+function updateDate() {
+  let currentDate = new Date().toLocaleDateString();
+  document.getElementById("date").innerText = currentDate;
+}
+
+updateDate();
