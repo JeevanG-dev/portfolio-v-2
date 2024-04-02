@@ -123,7 +123,7 @@ a img {
   text-decoration: none;
   border-radius: 20px 20px;
   text-align: center;
-border: 2px solid red;
+  border: 2px solid red;
   width: 150px;
   height: 5rem;
   margin-bottom: 32rem;
@@ -161,4 +161,19 @@ border: 2px solid red;
   width: 80vw;
   height: 60vh;
   margin: 23vh 0 0 11vw;
+}
+
+.windows {
+  width: 30rem;
+  height: 35rem;
+  border: 2px solid red;
+  position: absolute;
+  z-index: 2;
+  bottom: 3rem;
+  right: 100vw;
+}
+
+#check:checked + .windows {
+  right: calc(100vw - 33.5vw);
+  
 }

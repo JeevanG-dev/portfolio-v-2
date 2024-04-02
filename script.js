@@ -27,3 +27,8 @@ soud.forEach(function (press) {
     }, 300);
   });
 });
+
+document.getElementById("windows-pop").addEventListener("click", function () {
+  var clickSound = document.getElementById("clickSound");
+  clickSound.play();
+});
