@@ -48,3 +48,23 @@ function updateDate() {
 }
 
 updateDate();
+
+var correctPassword = "jatin123"; // Change this to your desired password
+
+// Function to check the entered password and toggle the locked/unlocked state
+function checkPassword() {
+  var passwordInput = document.getElementById("passwordInput");
+  var enteredPassword = passwordInput.value.trim();
+
+  if (enteredPassword === correctPassword) {
+    // If password is correct, unlock the div
+    var divElement = document.getElementById("lockedDiv");
+    divElement.classList.remove("locked");
+    divElement.classList.add("unlocked");
+    divElement.textContent = "Unlocked - Click to lock";
+    passwordInput.style.display = "none"; // Hide the password input
+  } else {
+    alert("Incorrect password. Please try again.");
+    passwordInput.value = ""; // Clear the input field
+  }
+}

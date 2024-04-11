@@ -126,8 +126,8 @@ a img {
   text-align: center;
   border: 2px solid red;
   height: 20rem;
-width: 180px;
-  margin-bottom:60%;
+  width: 180px;
+  margin-bottom: 60%;
   opacity: 0;
 }
 
@@ -178,4 +178,24 @@ width: 180px;
 
 #check:checked + .windows {
   right: calc(100vw - 44.3vw);
+}
+
+.unlocked {
+  background-color: #e0ffe0;
+  border: 1px solid #8bc34a;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.locked {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  padding: 20px;
+  cursor: pointer;
+}
+
+/* Style for the password input field */
+#passwordInput {
+  margin-top: 10px;
+  padding: 5px;
 }
