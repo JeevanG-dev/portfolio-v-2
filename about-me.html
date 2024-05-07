@@ -212,10 +212,30 @@
               href=""
             >
             <p>
-              <p id="date" style="margin-left: 5px;">   Wed 19</p>
+              <p id="dateAboutMe" style="margin-left: 5px;">   Wed 19</p>
             
-              <span id="time" style="font-weight: bold; padding-left: 5px"> 12:00</span>
+              <span id="timeAboutMe" style="font-weight: bold; padding-left: 5px"> 12:00</span>
             </p>
+            <script>
+              function updateTimeAboutMe(){
+  let currentTime = new Date().toLocaleTimeString();
+  document.getElementById("timeAboutMe").innerText = currentTime;
+}
+
+updateTimeAboutMe();
+
+let interValidFiles = setInterval(updateTimeAboutMe,1000);
+
+
+function updateDateAboutMe() {
+  let currentDate = new Date().toLocaleDateString();
+  document.getElementById("dateAboutMe").innerText = currentDate;
+}
+
+updateDateAboutMe();
+
+
+            </script>
             </a>
           </div>
           <hr style="transform: rotate(90deg); width: 30px; margin: 0px" />

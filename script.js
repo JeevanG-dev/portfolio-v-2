@@ -1,13 +1,4 @@
-// const wrap = document.getElementById("wrapper");
 
-// wrap.addEventListener("pointermove", (e) => {
-//   const { currentTarget: el, clientX: x, clientY: y } = e;
-//   const { top: t, left: l, width: w, height: h } = el.getBoundingClientRect();
-//   el.style.setProperty("--posX", x - l - w / 2);
-//   el.style.setProperty("--posY", y - t - h / 2);
-// });
-
-// let haha = new Audio(".assests/Microsoft Windows 7 Startup Sound.mp3")
 
 var soud = document.querySelectorAll(".iconClick");
 
@@ -42,6 +33,8 @@ updateTime();
 
 let interValid = setInterval(updateTime, 1000);
 
+
+
 function updateDate() {
   let currentDate = new Date().toLocaleDateString();
   document.getElementById("date").innerText = currentDate;
@@ -49,22 +42,7 @@ function updateDate() {
 
 updateDate();
 
-var correctPassword = "jatin123"; // Change this to your desired password
 
-// Function to check the entered password and toggle the locked/unlocked state
-function checkPassword() {
-  var passwordInput = document.getElementById("passwordInput");
-  var enteredPassword = passwordInput.value.trim();
 
-  if (enteredPassword === correctPassword) {
-    // If password is correct, unlock the div
-    var divElement = document.getElementById("lockedDiv");
-    divElement.classList.remove("locked");
-    divElement.classList.add("unlocked");
-    divElement.textContent = "Unlocked - Click to lock";
-    passwordInput.style.display = "none"; // Hide the password input
-  } else {
-    alert("Incorrect password. Please try again.");
-    passwordInput.value = ""; // Clear the input field
-  }
-}
+
+
